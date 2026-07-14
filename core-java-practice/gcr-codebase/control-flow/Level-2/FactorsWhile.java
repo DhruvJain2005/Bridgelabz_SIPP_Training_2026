@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class FactorsWhile {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a positive integer: ");
-        int n = sc.nextInt();
-        if (n <= 0) { System.out.println("Please enter a positive integer."); sc.close(); return; }
-        System.out.println("Factors of " + n + " (using while):");
+        int number = sc.nextInt();
         int i = 1;
-        while (i <= n) {
-            if (n % i == 0) System.out.println(i);
+
+        while (i <= number) {
+            if (number % i == 0) {
+                System.out.println(i);
+            }
             i++;
         }
         sc.close();
